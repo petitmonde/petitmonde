@@ -37,7 +37,7 @@ jobs:
 
       - name: Install processing dependencies
         working-directory: ./processing
-        run: uv sync
+        run: uv sync --all-extras
 
       - name: Lint processing (Ruff)
         working-directory: ./processing
@@ -49,7 +49,7 @@ jobs:
 
       - name: Install backend dependencies
         working-directory: ./backend
-        run: uv sync
+        run: uv sync --all-extras
 
       - name: Lint backend (Ruff)
         working-directory: ./backend
@@ -85,7 +85,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: ./processing
-        run: uv sync
+        run: uv sync --all-extras
 
       - name: Run tests
         working-directory: ./processing
@@ -115,7 +115,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: ./backend
-        run: uv sync
+        run: uv sync --all-extras
 
       - name: Run tests
         working-directory: ./backend

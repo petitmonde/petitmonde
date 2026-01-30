@@ -40,13 +40,13 @@ install: install-processing install-backend install-frontend
 # Install processing dependencies
 install-processing:
 	@echo "Installing processing dependencies with UV..."
-	@cd processing && uv sync
+	@cd processing && uv sync --all-extras
 	@echo "✓ Processing dependencies installed"
 
 # Install backend dependencies
 install-backend:
 	@echo "Installing backend dependencies with UV..."
-	@cd backend && uv sync
+	@cd backend && uv sync --all-extras
 	@echo "✓ Backend dependencies installed"
 
 # Install frontend dependencies
