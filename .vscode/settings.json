@@ -1,5 +1,40 @@
 {
   "chat.tools.terminal.autoApprove": {
     "make": true
+  },
+
+  // Python
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+
+  // Ruff configuration
+  "ruff.lint.enable": true,
+  "ruff.format.enable": true,
+  "ruff.lineLength": 88,
+
+  // JavaScript/TypeScript/Vue
+  "[javascript][typescript][vue][json][jsonc][yaml][markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue][javascript][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+
+  // Python extensions
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+
+  // File associations
+  "files.associations": {
+    "*.env.example": "properties"
   }
 }
