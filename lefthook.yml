@@ -15,25 +15,30 @@ pre-commit:
     # Python: Processing
     ruff-check-processing:
       glob: "processing/**/*.py"
-      run: cd processing && uv run ruff check --fix {staged_files}
+      root: "processing/"
+      run: uv run ruff check --fix {files}
       stage_fixed: true
     ruff-format-processing:
       glob: "processing/**/*.py"
-      run: cd processing && uv run ruff format {staged_files}
+      root: "processing/"
+      run: uv run ruff format {files}
       stage_fixed: true
 
     # Python: Backend
     ruff-check-backend:
       glob: "backend/**/*.py"
-      run: cd backend && uv run ruff check --fix {staged_files}
+      root: "backend/"
+      run: uv run ruff check --fix {files}
       stage_fixed: true
     ruff-format-backend:
       glob: "backend/**/*.py"
-      run: cd backend && uv run ruff format {staged_files}
+      root: "backend/"
+      run: uv run ruff format {files}
       stage_fixed: true
 
     # Frontend: ESLint
     eslint:
       glob: "frontend/**/*.{js,ts,jsx,tsx,vue}"
-      run: cd frontend && npm run lint -- --fix {staged_files}
+      root: "frontend/"
+      run: npm run lint -- --fix {files}
       stage_fixed: true
