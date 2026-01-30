@@ -1,0 +1,67 @@
+# Prettier ignore file
+# Files that Prettier cannot parse
+
+# Build and dependency files
+node_modules/
+package-lock.json
+npm-shrinkwrap.json
+.python-version
+
+# Python files and environments
+processing/.venv/**
+processing/**/*.py
+backend/.venv/**
+backend/**/*.py
+**/__pycache__/
+*.pyc
+uv.lock
+
+# Docker files
+Dockerfile
+docker-compose.yml
+*.dockerfile
+
+# Environment and config files
+.env
+.env.*
+requirements.txt
+.gitattributes
+pyproject.toml
+
+# Frontend build artifacts
+frontend/.quasar/**
+frontend/dist/**
+frontend/node_modules/**
+
+# Makefiles
+Makefile
+*.mk
+
+# Shell scripts
+*.sh
+
+# Git files
+.git/
+.gitignore
+
+# Prettier config files
+.prettierignore
+
+# Lock files
+*.lock
+
+# Logs
+*.log
+
+# Changelog
+CHANGELOG.md
+
+# Other config files that don't need formatting
+.editorconfig
+lefthook.yml
+**/**.yml
+**/**.yaml
+commitlint.config.js
+
+# CITATION files
+CITATION.cff
