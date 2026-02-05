@@ -15,8 +15,7 @@ body:
       label: What's running slowly?
       description: Describe what feels slow or unresponsive
       placeholder: "Example: The page takes 30 seconds to load my data, or the interface freezes when I upload a large file"
-    validations:
-      required: true
+    
 
   - type: textarea
     id: when-happens
@@ -25,8 +24,7 @@ body:
       description: What are you doing when you notice the slowness?
       placeholder: |
         Example: 1. I go to the data analysis page 2. I upload a CSV file with 10,000 rows 3. The page becomes unresponsive for 2 minutes
-    validations:
-      required: true
+    
 
   - type: dropdown
     id: frequency
@@ -37,8 +35,7 @@ body:
         - "Most of the time"
         - "Sometimes"
         - "Rarely"
-    validations:
-      required: true
+    
 
   - type: dropdown
     id: device-type
@@ -48,8 +45,7 @@ body:
         - "Desktop/Laptop"
         - "Tablet"
         - "Mobile phone"
-    validations:
-      required: true
+    
 
   - type: dropdown
     id: browser
@@ -61,8 +57,7 @@ body:
         - "Safari"
         - "Edge"
         - "Other"
-    validations:
-      required: true
+    
 
   - type: textarea
     id: file-size
