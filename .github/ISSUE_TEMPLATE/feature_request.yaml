@@ -17,8 +17,7 @@ body:
       label: What problem would this solve?
       description: What's making your work difficult right now?
       placeholder: "Example: When I'm analyzing data, I have to manually export each chart one by one, which takes forever..."
-    validations:
-      required: true
+ 
 
   - type: textarea
     id: solution
@@ -26,8 +25,7 @@ body:
       label: What would you like to see?
       description: Describe your ideal solution - don't worry about technical details!
       placeholder: "Example: A 'Download All Charts' button that saves everything as a ZIP file"
-    validations:
-      required: true
+ 
 
   - type: dropdown
     id: priority
@@ -38,8 +36,7 @@ body:
         - "Would help me work more efficiently"
         - "I really need this to do my job"
         - "This is blocking my research"
-    validations:
-      required: true
+ 
 
   - type: textarea
     id: context
